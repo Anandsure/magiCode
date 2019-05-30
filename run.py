@@ -21,7 +21,10 @@ CORS(app)# to let the webapp know that this backend is ready to accept stuff.
 
 @app.route('/')
 def home():
+    global intent 
+    intent=[]
     return render_template('compiler.html')
+    
 
 
 @app.route('/print/name', methods=['POST', 'GET'])
@@ -64,6 +67,7 @@ def get_names():
             intent.append(b[0]['intent'])
         else:
             intent.append(b[0]['intent'])
+    print('user said:', command)
     print(intent)
     
     while intent[0]=='python':
@@ -129,7 +133,7 @@ ans=sub(x,y)
 print(ans)"""
 
         elif intent[-1]=='arith_multiplication':
-            to_send="""def mult(a,b):
+            to_send="""def multi(a,b):
     return a*b
 x=int(input())
 y=int(input())
@@ -268,7 +272,7 @@ using namespace std;
 int main() {
     int x,y;
     cin>>x>>y;
-    cout<<"Product is: "<< x*y <<endl;
+    cout<<"Product is: "<< x*y << endl;
 return 0;
 }"""
 
@@ -277,7 +281,7 @@ return 0;
 using namespace std;
 int main() {
     int x,y;
-    cout<<"Quotient is: "<< x/y <<endl;
+    cout<<"Quotient is: "<< x/y << endl;
 return 0;
 }"""
 
@@ -538,7 +542,7 @@ switch ($x) {
 if __name__=='__main__':
     c=1
     intent=[]
-    webbrowser.open('http://127.0.0.1:5000/')
+    webbrowser.open('http://127.0.0.1:5000')
     app.run(debug=False)
     
 
