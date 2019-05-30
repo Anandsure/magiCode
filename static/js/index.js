@@ -37,7 +37,8 @@ function postChatMessage (response) {
   $.ajax({
     type: "POST",
     contentType: "application/json;charset=utf-8",
-    url: "http://localhost:5000/print/name",
+    //url: "http://127.0.0.1:5000/print/name", //localhostURL
+    url: "https://228125ae.ngrok.io/print/name", //ngrokURL, keeps changing xD
     traditional: "true",
     data: JSON.stringify(respon_json),
     dataType: "json",
