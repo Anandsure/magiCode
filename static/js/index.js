@@ -37,7 +37,8 @@ function postChatMessage (response) {
   $.ajax({
     type: "POST",
     contentType: "application/json;charset=utf-8",
-    url: "http://localhost:5000/print/name",
+    //url: "http://127.0.0.1:5000/print/name", //localhostURL
+    url: "https://228125ae.ngrok.io/print/name", //ngrokURL, keeps changing xD
     traditional: "true",
     data: JSON.stringify(respon_json),
     dataType: "json",
@@ -46,6 +47,7 @@ function postChatMessage (response) {
       var p=response.response.toString().localeCompare("python running!")
       var c=response.response.toString().localeCompare("running c++")
       var ph=response.response.toString().localeCompare("running php")
+      var sw=response.response.toString().localeCompare("running swift")
       if(p==0){
         flag=1
         console.log(flag)
@@ -70,6 +72,14 @@ function postChatMessage (response) {
         flag=flag
         console.log(flag)
       }
+      if(sw==0){
+        flag=3
+        console.log(flag)
+      }
+      else if(sw==-1 || sw==1){
+        flag=flag
+        console.log(flag)
+      }
       if(flag==1){
       displayResponse(response.response);
       }
@@ -79,6 +89,9 @@ function postChatMessage (response) {
       else if(flag==2){
         displayResponsePhp(response.response);
         }
+        else if(flag==3){
+          displayResponseSwift(response.response);
+          }
     }
     });
 }
@@ -115,6 +128,18 @@ function displayResponseC (response) {
     EnlighterJS.Util.Init('p', null, {
       indent: 4,
       language: 'cpp',
+      theme: 'MooTwo'
+  });
+}
+
+function displayResponseSwift (response) {
+  let newChat = document.createElement('p')
+  newChat.innerHTML = `${response}`
+    chatMessages = document.getElementById("chat-input");
+    chatMessages.append(newChat)
+    EnlighterJS.Util.Init('p', null, {
+      indent: 4,
+      language: 'swift',
       theme: 'MooTwo'
   });
 }
