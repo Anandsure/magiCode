@@ -68,7 +68,9 @@
       if (d.getElementById(id)) return;
       js = d.createElement(s);
       js.id = id;
-      js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
+      // js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
+      js.src = "../static/js/sdk.js";
+      
       fjs.parentNode.insertBefore(js, fjs);
     }(document, "script", "sphere-engine-compilers-jssdk"));
   </script>
