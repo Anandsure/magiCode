@@ -162,8 +162,14 @@ print('the array is:',var)"""
     return #any variable
 x=func_name(#arguments)"""
 
+        elif intent[-1]=='cplus' or intent[-1]=='swift' or intent[-1]=='php':
+            to_send= """Please Use the Change language option!"""
+
+        elif intent[-1]=='python':
+            to_send="""python running!"""
+        
         else:
-            to_send ='python running!'
+            to_send="""I am sorry, i dont know what that means"""
             
         c+=1
         return json.dumps({"response": to_send}), 200
@@ -365,9 +371,15 @@ case valueTwo:
 break; 
 default: //optional
 //statements
-}"""
+}"""    
+        elif intent[-1]=='swift' or intent[-1]=='python' or intent[-1]=='php':
+            to_send= """Please Use the Change language option!"""
+
+        elif intent[-1]=='cplus':
+            to_send="""running c++"""
+        
         else:
-            to_send= """running c++"""
+            to_send="""I am sorry, i dont know what that means"""
 
         c+=1
         return json.dumps({"response": to_send}), 200
@@ -527,8 +539,14 @@ switch ($x) {
         //default return code;
 }"""
 
+        elif intent[-1]=='cplus' or intent[-1]=='python' or intent[-1]=='swift':
+            to_send= """Please Use the Change language option!"""
+
+        elif intent[-1]=='php':
+            to_send="""running php"""
+        
         else:
-            to_send= """running php"""
+            to_send="""I am sorry, i dont know what that means"""
 
         c+=1
         return json.dumps({"response": to_send}), 200
@@ -677,14 +695,20 @@ default:
     // default reply
 }"""
 
+        elif intent[-1]=='cplus' or intent[-1]=='python' or intent[-1]=='php':
+            to_send= """Please Use the Change language option!"""
+        
+        elif intent[-1]=='swift':
+            to_send="""running swift"""
+        
         else:
-            to_send= """running swift"""
+            to_send="""I am sorry, i dont know what that means""" 
 
         c+=1
         return json.dumps({"response": to_send}), 200
 
     c+=1
-    return json.dumps({"response": ' '}), 200
+    return json.dumps({"response": 'Come back later for that language :) '}), 200
     
 
 if __name__=='__main__':
