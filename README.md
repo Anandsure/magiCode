@@ -1,5 +1,5 @@
 # magiCode
-<img src="https://github.com/Anandsure/magicodee/blob/master/templates/magiCode.png" data-canonical-src="https://github.com/Anandsure/magiCode/blob/master/templates/magiCode.png" width="250" height="250" /></br>
+<img src="https://github.com/Anandsure/magicodee/blob/master/templates/magiCode.png" data-canonical-src="https://github.com/Anandsure/magiCode/blob/master/static/magiCode.png" width="250" height="250" /></br>
 
 #### Translate YOUR language to COMPUTER language!
 
