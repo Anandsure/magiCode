@@ -202,8 +202,7 @@ func(9)"""
     }
 day=int(input())
 print(switch[day])
-#python does't have the concept of switch, hence this is
-#achieved using dictionaries."""
+#python does't have the concept of switch, hence this is achieved using dictionaries."""
 
         
         else:
