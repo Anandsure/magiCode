@@ -58,22 +58,24 @@
 <body background="../static/background.png">
 
 
-  <div class="sec-widget" align="center" data-widget="e1255de71d1e8524fea7c46d1d4a8676"></div>
-  <script>
-    SEC_HTTPS = true;
-    SEC_BASE = "compilers.widgets.sphere-engine.com";
-    (function (d, s, id) {
-      SEC = window.SEC || (window.SEC = []);
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      // js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
-      js.src = "../static/js/sdk.js";
-      
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, "script", "sphere-engine-compilers-jssdk"));
-  </script>
+  <div class="sec-widget" align="center" data-widget="e1255de71d1e8524fea7c46d1d4a8676">
+  </div>
+    <script>
+      SEC_HTTPS = true;
+      SEC_BASE = "compilers.widgets.sphere-engine.com";
+      (function (d, s, id) {
+        SEC = window.SEC || (window.SEC = []);
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        // js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
+        js.src = "../static/js/sdk.js";
+        
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, "script", "sphere-engine-compilers-jssdk"));
+    </script> 
+  
 <h5 align="right" style="margin: auto;
 align-items: center;
 padding-right: 15px;
