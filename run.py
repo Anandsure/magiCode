@@ -25,8 +25,6 @@ def home():
     intent=[]
     return render_template('compiler.html')
     
-
-
 @app.route('/print/name', methods=['POST', 'GET'])
 
 def get_names():
@@ -86,6 +84,8 @@ def get_names():
         elif intent[-1]=='nested_if':
             to_send = """if a==b:
     if a==b:
+        #enter your code here
+    else:
         #enter your code here"""
 
         elif intent[-1]=='else_if':
@@ -93,15 +93,26 @@ def get_names():
     #enter your code here"""
 
         elif intent[-1]=='else_condition':
-            to_send = """else:
+            to_send = """elif a &gt;= b:
+    #enter your code here
+else:
     #enter your code here"""
 
         elif intent[-1]=='while_loop':
             to_send = """while x == y:
     #enter your code here"""
 
+        elif intent[-1]=='do_while_loop':
+            to_send="""i = 1
+while True: #acts a the 'do' part.
+    print(i)
+    i = i + 1
+    if(i > 3):
+        break
+#Python doesn't have a do-while loop. Hence emulating it with boolean."""
+
         elif intent[-1]=='print':
-            to_send = """print(#your variable) """
+            to_send = """print(#your variable or string) """
 
         elif intent[-1]=='exit_loop':
             to_send ="""    if (condition):
@@ -167,6 +178,33 @@ x=func_name(#arguments)"""
 
         elif intent[-1]=='python':
             to_send="""python running!"""
+        
+        elif intent[-1]=='recus':
+            to_send="""def func(a):
+    a+=1
+    if a<=15:
+        print(a)
+        func(a) #recusion part.
+    else:
+        print('a exceeded the limit of 15!')
+    return
+func(9)"""
+
+        elif intent[-1]=='switch_condition':
+            to_send="""switch={
+    1:'monday',
+    2:'tuesday',
+    3:'wednesday',
+    4:'thursday',
+    5:'friday',
+    6:'saturday',
+    7:'sunday'
+    }
+day=int(input())
+print(switch[day])
+#python does't have the concept of switch, hence this is
+#achieved using dictionaries."""
+
         
         else:
             to_send="""I am sorry, i dont know what that means"""
@@ -251,7 +289,7 @@ do {
 
         elif intent[-1]=='init_float':
             to_send = """float x;"""
-
+ 
         elif intent[-1]=='arith_addition':
             to_send = """#include &lt;iostream&gt; 
 using namespace std;
@@ -678,6 +716,20 @@ print("reminder is" , modu(a: 18, b: 4), separator: " ")"""
     return The_final_output
 }
 print("output:" , your_func_name(a: 18, b: 4), separator: " ")"""
+
+        elif intent[-1]=='recus':
+            to_send = """func your_fun(a: Int) -> String {
+    var a = a + 1
+    if a <= 15 {
+        print(a)
+        your_fun(a: a)
+        }
+    else{
+        print("a has exceeded the limit of 15")
+    }
+    return ""
+}
+print(your_fun(a: 9))"""
 
 
         elif intent[-1]=='create_array':
