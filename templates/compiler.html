@@ -17,12 +17,12 @@
     }
   </style>
 
-  <title>magiCode</title>
+  <title>magiCode Practice</title>
   <link rel="icon" href="../static/Favicon.png">
   <link rel="stylesheet" href="../stati/css/style.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
 
-  <link rel="stylesheet" href="../stati/css/style.css">
+  <link rel="stylesheet" href="../stati/css/index.css">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -57,26 +57,61 @@
 
 <body background="../static/background.png">
 
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="#" style="color: whitesmoke;font-size: 24px;">magiCode</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="home.html"><span
+                style="color: white;font-weight: 200;font-size: 20px;font-family: Times New Roman, Times, serif;">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span
+                style="color: white;font-weight: 200;font-size: 20px;font-family: Times New Roman, Times, serif;"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.hackerrank.com/magicode-challenges"><span
+                style="color: white;font-weight: 200;font-size: 20px;font-family: Times New Roman, Times, serif;">Compete</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span
+                style="color: white;font-weight: 200;font-size: 20px;font-family: Times New Roman, Times, serif;"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html"><span
+                style="color: white;font-weight: 200;font-size: 20px;font-family: Times New Roman, Times, serif;">Redeem
+                Hackos</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
   <div class="sec-widget" align="center" data-widget="e1255de71d1e8524fea7c46d1d4a8676">
   </div>
-    <script>
-      SEC_HTTPS = true;
-      SEC_BASE = "compilers.widgets.sphere-engine.com";
-      (function (d, s, id) {
-        SEC = window.SEC || (window.SEC = []);
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        // js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
-        js.src = "../static/js/sdk.js";
-        
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, "script", "sphere-engine-compilers-jssdk"));
-    </script> 
-  
-<h5 align="right" style="margin: auto;
+  <script>
+    SEC_HTTPS = true;
+    SEC_BASE = "compilers.widgets.sphere-engine.com";
+    (function (d, s, id) {
+      SEC = window.SEC || (window.SEC = []);
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      // js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
+      js.src = "../static/js/sdk.js";
+
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, "script", "sphere-engine-compilers-jssdk"));
+  </script>
+
+  <h5 align="right" style="margin: auto;
 align-items: center;
 padding-right: 15px;
 text-decoration-color: #ffffff;
@@ -93,27 +128,29 @@ font-style: italic;"> Current Languages: Python ,PHP ,C++ ,Swift </h5>
 
         <div class="card">
           <div class="card-body">
-              <div class="row">
-                  <img src="../static/magiCode.png" alt="magiCode" style="display: block;margin-left: auto;margin-right: auto;height: 130px;width: 130px;">
-              </div>
-              <br>
+            <div class="row">
+              <img src="../static/magiCode.png" alt="magiCode"
+                style="display: block;margin-left: auto;margin-right: auto;height: 130px;width: 130px;">
+            </div>
+            <br>
             <div class="row">
               <div class="col-lg-12">
-                <ul id="chat-responses"  class="chat-messages" style="width: auto;
+                <ul id="chat-responses" class="chat-messages" style="width: auto;
                 font-weight: bold;
                 font-family: Arial;
                 height: 40px;
                 padding: 10px;
                 border: 2px solid rgb(0, 0, 0);
-                margin: 0;">Your Command is shown here!</ul>
+                margin: 0;
+                color:grey;" align="center">Your Command Will Be Displayed Here</ul>
               </div>
             </div>
           </div>
-          
-          <div class="EnlighterJSWrapper enlighterEnlighterJSWrapper" id="chat-input" >
+
+          <div class="EnlighterJSWrapper enlighterEnlighterJSWrapper" id="chat-input">
 
           </div>
-          
+
 
           <div class="row">
             <div class="col-lg-12" align="center">
@@ -135,8 +172,8 @@ font-style: italic;"> Current Languages: Python ,PHP ,C++ ,Swift </h5>
                 </svg>
               </div>
               <div align="center" class="recording-status"><b>
-                  <h4>Hi! I am magiCode.
-                    Start by choosing your language</h4>
+                  <h4>Hi I am magiCode!<br>
+                    Start by choosing your preferred language!</h4>
                 </b>
               </div>
             </div>
