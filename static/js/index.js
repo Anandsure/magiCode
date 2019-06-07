@@ -37,8 +37,8 @@ function postChatMessage (response) {
   $.ajax({
     type: "POST",
     contentType: "application/json;charset=utf-8",
-    //url: "http://127.0.0.1:5000/print/name", //localhostURL
-    url: "https://228125ae.ngrok.io/print/name", //ngrokURL, keeps changing xD
+    url: "http://127.0.0.1:5000/print/name", //localhostURL
+    //url: " https://f0061e2e.ngrok.io/print/name", //servo.net 
     traditional: "true",
     data: JSON.stringify(respon_json),
     dataType: "json",
@@ -155,11 +155,11 @@ function listenForSpeech () {
         console.log(isRecording)
         if (isRecording){
           isRecording = false
-          recordingStatus.innerText = 'speak your querry :)'
+          recordingStatus.innerText = 'Speak your querry :)'
           return 0;
         }
         isRecording = true
-        recordingStatus.innerText = 'Listening for speech'
+        recordingStatus.innerText = 'Listening....'
         var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
         var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
         var recognition = new SpeechRecognition()
@@ -184,7 +184,7 @@ function listenForSpeech () {
         }
 
         recognition.onspeechend = function() {
-            recordingStatus.innerText = 'speak your querry'
+            recordingStatus.innerText = 'speak your querry :)'
             console.log('Speech has stopped being detected');
         }
 

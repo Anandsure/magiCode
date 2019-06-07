@@ -56,7 +56,8 @@
             var iframe = document.createElement('iframe');
             iframe.setAttribute('id', id);
             iframe.src = (SEC_HTTPS ? 'https' : 'http') + '://' + SEC_BASE + '/' + element.getAttribute('data-widget') + '?place_id=' + id + '&sdk=1';
-            
+            //iframe.src = 'http://127.0.0.1:5000/comp/'
+            SECUtils.log('anand',null, iframe.src);
             if (element.getAttribute('data-signature') != null) {
             	iframe.src = iframe.src + '&se_signature=' + element.getAttribute('data-signature');
             }
@@ -284,7 +285,8 @@
             
             this.initialized = true;
 			
-			SECUtils.log('info', null, 'init');
+            SECUtils.log('info', null, 'init');
+            
             
             this.load(); // load after initializind
             this.monitor(); // starts the visibility monitoring
@@ -711,6 +713,9 @@
                 break;
             case 'error':
                 console.error(log);
+                break;
+            case 'anand':
+                console.log(log);
                 break;
         }
     };

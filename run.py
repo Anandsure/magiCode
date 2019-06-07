@@ -89,7 +89,9 @@ def get_names():
         #enter your code here"""
 
         elif intent[-1]=='else_if':
-            to_send = """elif a==b:
+            to_send = """if a>=b:
+    #enter your code here
+elif a==b:
     #enter your code here"""
 
         elif intent[-1]=='else_condition':
@@ -103,11 +105,11 @@ else:
     #enter your code here"""
 
         elif intent[-1]=='do_while_loop':
-            to_send="""i = 1
+            to_send="""a = 1
 while True: #acts a the 'do' part.
-    print(i)
-    i = i + 1
-    if(i > 3):
+    print(a)
+    a+=3
+    if(a > 10):
         break
 #Python doesn't have a do-while loop. Hence emulating it with boolean."""
 
@@ -219,7 +221,7 @@ print(switch[day])
 }"""
 
         elif intent[-1]=='print':
-            to_send = """cout<<'Enter your string here !<<endl;' """
+            to_send = """cout << 'Enter your string here!' << endl; """
 
         elif intent[-1]=='nested_for':
             to_send = """for(int x=a;x&lt;b;x++) {
