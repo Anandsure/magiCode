@@ -225,7 +225,7 @@ print(switch[day])
 }"""
 
         elif intent[-1]=='print':
-            to_send = """cout << 'Enter your string here!' << endl; """
+            to_send = """cout << "Enter your string here!" << endl; """
 
         elif intent[-1]=='nested_for':
             to_send = """for(int x=a;x&lt;b;x++) {
@@ -255,9 +255,6 @@ if(x==a) {
 }
 else if(x==b) {
 //enter your code; 
-}
-else if(x==c) {
-//enter your code;  
 }"""
                 
         elif intent[-1]=='else_condition':
@@ -299,9 +296,10 @@ do {
             to_send = """#include &lt;iostream&gt; 
 using namespace std;
 int main() {
-    int x,y;
+    int x,y,sum;
     cin>>x>>y;
-    cout<<"Sum is: "<< x+y << endl;
+    sum = x+y;
+    cout<<"Sum is: "<< sum << endl;
 return 0;
 }"""
 
@@ -309,9 +307,10 @@ return 0;
             to_send = """#include &lt;iostream&gt;
 using namespace std;
 int main() {
-    int x,y;
+    int x,y,diff;
     cin>>x>>y;
-    cout<<"Difference is: "<< x-y << endl;
+    diff = x-y;
+    cout<<"Difference is: "<< diff << endl;
 return 0;
 }"""
 
@@ -319,9 +318,10 @@ return 0;
             to_send = """#include &lt;iostream&gt;
 using namespace std;
 int main() {
-    int x,y;
+    int x,y,prod;
     cin>>x>>y;
-    cout<<"Product is: "<< x*y << endl;
+    prod = x*y;
+    cout<<"Product is: "<< prod << endl;
 return 0;
 }"""
 
@@ -329,8 +329,10 @@ return 0;
             to_send = """#include &lt;iostream&gt;
 using namespace std;
 int main() {
-    int x,y;
-    cout<<"Quotient is: "<< x/y << endl;
+    int x,y,quo;
+    cin>>x>>y;
+    quo = x/y;
+    cout<<"Quotient is: "<< quo << endl;
 return 0;
 }"""
 
@@ -338,8 +340,9 @@ return 0;
             to_send = """#include &lt;iostream&gt;
 using namespace std;
 int main() {
-    int x,y;
-    cout<<"Remainder is: "<< x%y << endl;
+    int x,y,rem;
+    rem = x%y;
+    cout<<"Remainder is: "<< rem << endl;
 return 0;
 }"""
 
