@@ -1,5 +1,4 @@
-# magiCode
-<img src="https://github.com/akshatvg/magiCode/blob/master/static/magiCode.png" data-canonical-src="https://github.com/akshatvgÏ/magiCode/blob/master/static/magiCode.png" width="250" height="250" /></br>
+<img src="https://github.com/akshatvg/magiCode/blob/master/static/magiCode.png" data-canonical-src="https://github.com/akshatvg/magiCode/blob/master/static/magiCode.png" width="250" height="250" /></br>
 
 #### Translate YOUR language to COMPUTER language!
 
