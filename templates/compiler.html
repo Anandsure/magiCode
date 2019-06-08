@@ -4,7 +4,7 @@
 <head>
   <style>
     .button {
-      background-color: rgb(238, 29, 134);
+      background-color: #19A94C;
       border: none;
       color: white;
       padding: 15px 32px;
@@ -55,12 +55,13 @@
     data-indent="2" data-selector-block="pre" data-selector-inline="code">
 </head>
 
-<body background="../static/background.png">
+<body style="background-color: rgba(192, 192, 192, 0.685)">
 
   <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-light" style="box-shadow: 1px 2px 10px rgba(1, 1, 1, 1.15);">
       <div class="mx-auto order-0">
-        <a class="navbar-brand mx-auto" href="http://127.0.0.1:5000/" style="color: whitesmoke;font-size: 24px;">magiCode</a>
+        <a class="navbar-brand mx-auto" href="http://127.0.0.1:5000/"
+          style="color: #19A94C;font-size: 24px;">magiCode</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -76,8 +77,8 @@
                 style="color: white;font-weight: 200;font-size: 20px;font-family: Times New Roman, Times, serif;"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.hackerrank.com/magicode-challenges"><span
-                style="color: white;font-weight: 200;font-size: 20px;font-family: Times New Roman, Times, serif;">Compete</span></a>
+            <a class="nav-link" href="https://www.hackerrank.com/magicode-challenges" target="_blank"><span
+                style="color: black;font-weight: 200;font-size: 20px;font-family: Times New Roman, Times, serif;">Compete</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#"><span
@@ -85,64 +86,37 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="http://127.0.0.1:5000/shop"><span
-                style="color: white;font-weight: 200;font-size: 20px;font-family: Times New Roman, Times, serif;">Redeem
+                style="color: black;font-weight: 200;font-size: 20px;font-family: Times New Roman, Times, serif;">Redeem
                 Hackos</span></a>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-
-  <div class="sec-widget" align="center" data-widget="e1255de71d1e8524fea7c46d1d4a8676">
-  </div>
-  <script>
-    SEC_HTTPS = true;
-    SEC_BASE = "compilers.widgets.sphere-engine.com";
-    (function (d, s, id) {
-      SEC = window.SEC || (window.SEC = []);
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      // js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
-      js.src = "../static/js/sdk.js";
-
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, "script", "sphere-engine-compilers-jssdk"));
-  </script>
-
-  <h5 align="right" style="margin: auto;
-align-items: center;
-padding-right: 15px;
-text-decoration-color: #ffffff;
-color: white;
-text-size-adjust: auto;
-font-size: smaller;
-font-style: italic;"> Current Languages: Python ,PHP ,C++ ,Swift </h5>
-
   <div class="container">
     <div class="row">
       <div class="col-lg-3" style="display: none;"></div>
       <div class="col-lg-6" style="margin: auto; align-items: center"><br />
 
 
-        <div class="card">
+        <div class="card"
+          style="border-top: 5px solid #19A94C;border-right: 5px solid #19A94C;border-left: 5px solid #19A94C;border-bottom: 5px solid #19A94C;box-shadow: 1px 2px 10px rgba(0, 0, 0, 1.15);border-radius: 6px;">
           <div class="card-body">
             <div class="row">
               <img src="../static/magiCode.png" alt="magiCode"
-                style="display: block;margin-left: auto;margin-right: auto;height: 130px;width: 130px;">
+                style="display: block;margin-left: auto;margin-right: auto;height: 130px;width: 130px;box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.15);">
             </div>
             <br>
-            <div class="row">
+            <div class=" row">
               <div class="col-lg-12">
                 <ul id="chat-responses" class="chat-messages" style="width: auto;
                 font-weight: bold;
                 font-family: Arial;
                 height: 40px;
                 padding: 10px;
-                border: 2px solid rgb(0, 0, 0);
+                border: 2px solid #19A94C;
                 margin: 0;
-                color:grey;" align="center">Your Command Will Be Displayed Here</ul>
+                color: black;" align="center">Your Command Will Be Displayed Here</ul>
               </div>
             </div>
           </div>
@@ -184,6 +158,30 @@ font-style: italic;"> Current Languages: Python ,PHP ,C++ ,Swift </h5>
       <!--<div ><img src="magiCode.png" align="center"></div>!-->
     </div>
   </div>
+  <h5 align="right" style="margin: auto;
+  align-items: center;
+  padding-right: 15px;
+  text-decoration-color: #ffffff;
+  color: #19A94C;
+  text-size-adjust: auto;
+  font-size: small;font-weight: 800;"> Current Languages: Python ,PHP ,C++ ,Swift </h5><br>
+  <div class="sec-widget" align="center" data-widget="e1255de71d1e8524fea7c46d1d4a8676">
+  </div>
+  <script>
+    SEC_HTTPS = true;
+    SEC_BASE = "compilers.widgets.sphere-engine.com";
+    (function (d, s, id) {
+      SEC = window.SEC || (window.SEC = []);
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      // js.src = (SEC_HTTPS ? "https" : "http") + "://" + SEC_BASE + "/static/sdk/sdk.js";
+      js.src = "../static/js/sdk.js";
+
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, "script", "sphere-engine-compilers-jssdk"));
+  </script>
 
   <script src="../static/js/index.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
