@@ -1,19 +1,11 @@
 from flask import Flask, flash, redirect, render_template, url_for, request
 from flask_cors import CORS
 import ibm_watson
-#from gtts import gTTS
-#import os
 import re
 import webbrowser
-#import smtplib
 import requests,json
 import urllib
-#import boto3
 import os
-#import cv2
-
-#import assistant
-
 
 app = Flask(__name__)
 
@@ -23,7 +15,19 @@ CORS(app)# to let the webapp know that this backend is ready to accept stuff.
 def home():
     global intent 
     intent=[]
+    return render_template('home.html')
+
+@app.route('/practice')
+def practice():
+    global intent 
+    intent=[]
     return render_template('compiler.html')
+
+@app.route('/shop')
+def shop():
+    global intent 
+    intent=[]
+    return render_template('shop.html')
     
 @app.route('/print/name', methods=['POST', 'GET'])
 
