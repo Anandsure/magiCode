@@ -8,7 +8,7 @@ magiCode is an educative technology which helps students learn, compete and earn
 
 ## Ever faced these problems?
 1) You may be an expert at a particular language: Say Python, C++, JavaScript or even Swift.</br> 
-You're solving an online contest on HackerRank but a particular</br>
+You're solving an online contest on HackerRank but a particular question supports only few premium languages and hence you're not able to top the leaderboard.</br>
 You know that a string needs to be input followed by a 'if condition', but don't know the syntax.</br>
 
 - In C++ it'll be:
