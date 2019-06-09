@@ -551,7 +551,6 @@ function add(float $x,float $y){
     return "Your Output";
 }
 add($x,$y);
-
 ?>"""
 
 
@@ -774,7 +773,5 @@ default:
 if __name__=='__main__':
     c=1
     intent=[]
-    webbrowser.open('http://127.0.0.1:5000')
+    webbrowser.open('http://127.0.0.1:5000/practice')
     app.run(debug=False)
-    
-
