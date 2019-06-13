@@ -1,6 +1,6 @@
 <img src="https://github.com/akshatvg/magiCode/blob/master/static/magiCode.png" data-canonical-src="https://github.com/akshatvg/magiCode/blob/master/static/magiCode.png" width="200" height="200" /></br>
 
-# Winner of the IBM Challenge in AngelHack Bangalore 2019
+## Winner of the IBM Challenge in AngelHack Bangalore 2019
 
 ### Translate YOUR language to COMPUTER language!
 
